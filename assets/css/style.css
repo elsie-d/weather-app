@@ -1,0 +1,55 @@
+:root {
+    --primary: #548CA8;
+    --secondary: #476072;
+    --dark:#334257;
+    --light: #EEEEEE;
+}
+
+body{
+    margin: auto;
+  
+}
+header, footer {
+background-color: var(--primary);
+color: var(--light);
+padding: 20px;
+}
+
+.navbar-brand {
+color: var(--light);
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: var(--primary);
+}
+
+
+main {
+    background-color: var(--light);
+    padding: 40px 20px;
+    justify-content: center;
+}
+form {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn-primary {
+--bs-btn-color: #EEEEEE;
+--bs-btn-bg: #476072;
+--bs-btn-border-color: #476072;
+--bs-btn-hover-color: #EEEEEE;
+--bs-btn-hover-bg: #476072;
+--bs-btn-hover-border-color: #476072;
+--bs-btn-focus-shadow-rgb: 49,132,253;
+--bs-btn-active-color: #EEEEEE;
+--bs-btn-active-bg: #476072;
+--bs-btn-active-border-color: #476072;
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+--bs-btn-disabled-color: #EEEEEE;
+--bs-btn-disabled-bg: #476072;
+--bs-btn-disabled-border-color: #476072;
+}
+.container {
+    padding: 20px 0;
+}
