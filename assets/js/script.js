@@ -3,7 +3,7 @@ var searchForm = document.querySelector('form')
 
 function handleSearch(event){
 event.preventDefault();
-var searchInput = document.querySelector('#city-search')   
+var searchInput = document.querySelector('#city-search').value   
 
     if (!searchInput) {
         alert('Cannot search for blank input');
@@ -12,7 +12,7 @@ var searchInput = document.querySelector('#city-search')
 var queryString = './search-return.html?q=' + searchInput;
 location.assign(queryString);
 
-fetch(queryURL);
+//fetch(queryURL);
 
 console.log(queryString);
 }

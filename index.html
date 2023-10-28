@@ -26,74 +26,74 @@
 
         </header>
         <main>
-
+            <!--START Search Bar-->
             <form class="search-form">
                 <div class="mb-3">
-                  <label for="city-search" class="form-label">Search City</label>
-                  <input type="text" class="form-control" id="city-search" >
+                  <label for="search" class="form-label">Search by City Name</label>
+                  <input type="text" class="form-control" id="search" placeholder="E.g., San Farncisco, Los Angeles, New York" >
                 
                 </div>
                 
-                <button type="search" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary">Search</button>
             </form>
+            <!--END Search Bar-->
+            <!--START Favorites/ Search History Cards-->
               <div class="container text-center">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12" id="favorite-1">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfz8FlVtKTbJ89pTN-dgPLVpGDbOxwHPatfScvyznxuAy3qclypEvmH8O7IRUI0P-0mViuoV4a3DgBBohq6JJk2GFyAj-bauXHEeTgeNJHcCYp2eA5SlZ6GU1sqzWg5GxWGDbe01JdTtJrroLL2bU60KPHgFvhooNdGt94cwV2CjzTD7poxTX9NSZjVWdRSO3cWkZeL9avXHqHBH7iFhzkr10G2qSHjUl1yzeL1kdanlGkmdVwlhRbz7LaYdPzCQVnYdl1AS9O8kd26fi0u8cjwqoSPYffhL-wh0Lig0GV4jw5UxCISGuU8SpwD9w2r1jaCnBonj2C_yGYrTZR3Akw4ksmEqvmc4gAJEhYZ3RFqndICvtM_I0hKDRNfLiS_ObF5Nk9ykP4d1CbZ8V1Rnq2U2FmjM9uIain68GjmIrJSUtXQuN4YH_6a0-Z1VdP1WCvuB6MqT1oisAfTCEfsLuRd013087huwfOrimv83oWKfsEqgsZQKATWwNn8nQiu5rmHvjEXrw235MzDVIGvVVwa9fZgFKT0K2jvMyvFw9GgBzR_vIcLwNqQevgfGh5IBH09HVAqXHQIGPGcPxNcyINk6EIC1D2GPJiB44SWSfBAtgiOpsngFePRNtJvemaaNIt2DgfaTy5O26h-4f-9Mk1mK-Xvpr1Tv3-YAJ_d13_ffDJpqIUSkO0_m8Lgn_xfVYecn_IXcTSBJFEzmQBGUMpk7VkQeNTn1NBUH5Qeyk34exsb1TsGoTN75yfOOW_dM0H7pPBxiP5Lj_1nKBwdbRSYiUkQisGeg-zA1-TJCfV7cQnN9ocfeypTW8BqBQGcgQFoGgt_i-f_iQFpRVlYlrr2_lBtNimyoppJPP1vCfQxGYcVqQwYZkfWmxrb-ATXcSMdQBEi1lZF3K5NTgZ7tOGn55Y=w1094-h1944-s-no-gm?authuser=0" class="card-img-top" alt="...">
+                        <!--img src="#" class="card-img-top" alt="..."-->
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" style="width:25%; text-align: center; padding-bottom: ;">
+                          <h5 class="card-title">City Name</h5>
+                          <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
+                          <li class="list-group-item">Current Temp</li>
                         </ul>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="#" class="card-link">See Forecast</a>
+                          
                         </div>
                       </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12" id="favorite-2">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfz8FlVtKTbJ89pTN-dgPLVpGDbOxwHPatfScvyznxuAy3qclypEvmH8O7IRUI0P-0mViuoV4a3DgBBohq6JJk2GFyAj-bauXHEeTgeNJHcCYp2eA5SlZ6GU1sqzWg5GxWGDbe01JdTtJrroLL2bU60KPHgFvhooNdGt94cwV2CjzTD7poxTX9NSZjVWdRSO3cWkZeL9avXHqHBH7iFhzkr10G2qSHjUl1yzeL1kdanlGkmdVwlhRbz7LaYdPzCQVnYdl1AS9O8kd26fi0u8cjwqoSPYffhL-wh0Lig0GV4jw5UxCISGuU8SpwD9w2r1jaCnBonj2C_yGYrTZR3Akw4ksmEqvmc4gAJEhYZ3RFqndICvtM_I0hKDRNfLiS_ObF5Nk9ykP4d1CbZ8V1Rnq2U2FmjM9uIain68GjmIrJSUtXQuN4YH_6a0-Z1VdP1WCvuB6MqT1oisAfTCEfsLuRd013087huwfOrimv83oWKfsEqgsZQKATWwNn8nQiu5rmHvjEXrw235MzDVIGvVVwa9fZgFKT0K2jvMyvFw9GgBzR_vIcLwNqQevgfGh5IBH09HVAqXHQIGPGcPxNcyINk6EIC1D2GPJiB44SWSfBAtgiOpsngFePRNtJvemaaNIt2DgfaTy5O26h-4f-9Mk1mK-Xvpr1Tv3-YAJ_d13_ffDJpqIUSkO0_m8Lgn_xfVYecn_IXcTSBJFEzmQBGUMpk7VkQeNTn1NBUH5Qeyk34exsb1TsGoTN75yfOOW_dM0H7pPBxiP5Lj_1nKBwdbRSYiUkQisGeg-zA1-TJCfV7cQnN9ocfeypTW8BqBQGcgQFoGgt_i-f_iQFpRVlYlrr2_lBtNimyoppJPP1vCfQxGYcVqQwYZkfWmxrb-ATXcSMdQBEi1lZF3K5NTgZ7tOGn55Y=w1094-h1944-s-no-gm?authuser=0" class="card-img-top" alt="...">
+                        <!--img src="#" class="card-img-top" alt="..."-->
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" style="width:25%; text-align: center; padding-bottom: ;">
+                          <h5 class="card-title">City Name</h5>
+                          <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
+                          <li class="list-group-item">Current Temp</li>
                         </ul>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="#" class="card-link">See Forecast</a>
+                          
                         </div>
                       </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12" id="favorite-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfz8FlVtKTbJ89pTN-dgPLVpGDbOxwHPatfScvyznxuAy3qclypEvmH8O7IRUI0P-0mViuoV4a3DgBBohq6JJk2GFyAj-bauXHEeTgeNJHcCYp2eA5SlZ6GU1sqzWg5GxWGDbe01JdTtJrroLL2bU60KPHgFvhooNdGt94cwV2CjzTD7poxTX9NSZjVWdRSO3cWkZeL9avXHqHBH7iFhzkr10G2qSHjUl1yzeL1kdanlGkmdVwlhRbz7LaYdPzCQVnYdl1AS9O8kd26fi0u8cjwqoSPYffhL-wh0Lig0GV4jw5UxCISGuU8SpwD9w2r1jaCnBonj2C_yGYrTZR3Akw4ksmEqvmc4gAJEhYZ3RFqndICvtM_I0hKDRNfLiS_ObF5Nk9ykP4d1CbZ8V1Rnq2U2FmjM9uIain68GjmIrJSUtXQuN4YH_6a0-Z1VdP1WCvuB6MqT1oisAfTCEfsLuRd013087huwfOrimv83oWKfsEqgsZQKATWwNn8nQiu5rmHvjEXrw235MzDVIGvVVwa9fZgFKT0K2jvMyvFw9GgBzR_vIcLwNqQevgfGh5IBH09HVAqXHQIGPGcPxNcyINk6EIC1D2GPJiB44SWSfBAtgiOpsngFePRNtJvemaaNIt2DgfaTy5O26h-4f-9Mk1mK-Xvpr1Tv3-YAJ_d13_ffDJpqIUSkO0_m8Lgn_xfVYecn_IXcTSBJFEzmQBGUMpk7VkQeNTn1NBUH5Qeyk34exsb1TsGoTN75yfOOW_dM0H7pPBxiP5Lj_1nKBwdbRSYiUkQisGeg-zA1-TJCfV7cQnN9ocfeypTW8BqBQGcgQFoGgt_i-f_iQFpRVlYlrr2_lBtNimyoppJPP1vCfQxGYcVqQwYZkfWmxrb-ATXcSMdQBEi1lZF3K5NTgZ7tOGn55Y=w1094-h1944-s-no-gm?authuser=0" class="card-img-top" alt="...">
+                        <!--img src="#" class="card-img-top" alt="..."-->
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" style="width:25%; text-align: center; padding-bottom: ;">
+                          <h5 class="card-title">City Name</h5>
+                          <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
+                          <li class="list-group-item">Current Temp</li>
                         </ul>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="#" class="card-link">See Forecast</a>
+                          
                         </div>
                       </div>
                   </div>
                 </div>
               </div>
+              <!--END Favorites/ Search History Cards-->
         </main>
       
         <footer class="footer">
