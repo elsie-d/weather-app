@@ -60,6 +60,7 @@ form {
     display: flex;
     gap: 35px;
     padding: 30px;
+    justify-content: center;
 
 }
 .weather-data {
@@ -70,7 +71,7 @@ form {
     margin: 20px auto;
 }
 .current-weather {
-    background-color: antiquewhite;
+    background-color: bisque;
     padding: 20px 40px  20px 20px ;
     border-radius: 10px;
     display: flex;
@@ -88,6 +89,9 @@ form {
     font-size: 1.25 rem;
     text-transform: capitalize;
 }
+.current-weather .icon {
+    text-align: center;
+}
 .current-weather .icon img {
     max-width: 140px;
     
@@ -96,6 +100,7 @@ form {
 .forecast-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
