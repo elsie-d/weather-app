@@ -15,8 +15,7 @@ var forecastCardsDiv = document.querySelector(".forecast-cards")
 var createForecastCard = (cityParam, weatherBlock, index) => {
     if (index === 0){
         return `
-        
-        <div class="details">
+         <div class="details">
           <h2>${cityParam}</h2>
           <h4>Temperature: ${(((weatherBlock.main.temp - 273.15)*1.8)+32).toFixed(2)} ℉</h4>
           <h4>Humidity:  ${weatherBlock.main.humidity}%</h4>

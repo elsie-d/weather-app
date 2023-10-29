@@ -63,7 +63,7 @@ form {
 
 }
 .weather-data {
-   width: 75%;
+   width:100%;
 }
 .weather-data h2 {
     font-size: 1.75rem;
@@ -71,10 +71,10 @@ form {
 }
 .current-weather {
     background-color: antiquewhite;
-    padding: 20px 80px 20px 20px;
+    padding: 20px 40px  20px 20px ;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
 
 }
 .current-weather h2 {
@@ -96,7 +96,7 @@ form {
 .forecast-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
 }
 
 .forecast-cards .card {
