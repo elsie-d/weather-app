@@ -54,6 +54,74 @@ form {
     padding: 20px 0;
 }
 
+
+.containerAll{
+
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+
+}
+.weather-data {
+   width: 75%;
+}
+.weather-data h2 {
+    font-size: 1.75rem;
+    margin: 20px auto;
+}
+.current-weather {
+    background-color: antiquewhite;
+    padding: 20px 80px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.current-weather h2 {
+    font-size: 1.75rem;
+}
+.current-weather h4 {
+    font-size: 1.2rem;
+    margin-top: 14px;
+}
+.current-weather h6 {
+    font-size: 1.25 rem;
+    text-transform: capitalize;
+}
+.current-weather .icon img {
+    max-width: 140px;
+    
+
+}
+.forecast-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.forecast-cards .card {
+    list-style: none;
+    background-color: bisque;
+    padding: 15px 10px;
+
+}
+
+.forecast-cards img {
+    max-width: 80px;
+}
+
+.card-body h5 {
+    margin-top: 15px;
+
+}
+
+.card-body {
+    text-align: center;
+
+}
+
+
+
 /*  HIDE FOR NOW
 #favorite-1, #favorite-2, #favorite-3 {
     display: none;

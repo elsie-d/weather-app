@@ -27,56 +27,109 @@
         </header>
         <main>
 
-            <form>
-                <div class="mb-3">
-                  <label for="city-search" class="form-label">Search City</label>
-                  <input type="text" class="form-control" id="city-search" >
-                
-                </div>
-                
-                <button type="search" class="btn btn-primary">Search</button>
-            </form>
-              <div class="container text-center">
-                <div class="row">
-                  <div class="col-lg-8 col-md-6 col-sm-6 col-12">
-                    <div class="card" style="width: 38rem;">
-                        <!--img src="..." class="card-img-top" alt="..."-->
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card" style="width: 18rem;">
-                        <!--img src="..." class="card-img-top" alt="..."-->
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
+           <!--START Search Bar-->
+           <form class="search-form">
+            <div class="mb-3">
+              <label for="search" class="form-label">Search by City Name</label>
+              <input type="text" class="form-control" id="search" placeholder="E.g., San Farncisco, Los Angeles, New York" >
+            
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+          <!--END Search Bar-->
+         
+          
+          <div class="containerAll">
+          <div class="weather-data">
+             <!--START Current Weather-->
+            <div class="current-weather">
+              <div class="details">
+                <h2>CITY NAME -- DATE</h2>
+                  <h4>Temperature:</h4>
+                  <h4>Humidity:</h4>
+                  <h4>Wind:</h4>
               </div>
+              <div class="icon">
+                <img src="./assets/images/sun-regular.svg" alt="weather-icon">
+                <h6>sunny day</h5>
+              </div>
+            </div>
+            <!--END Current Weather-->
+             <!--START Forecast-->
+             <h2>5 day Forecast</h2>
+            <div class="forecast-cards">
+            <div class="card col-lg-2 col-md-2 col-sm-12 col-12 " >
+              <div class="card-body ">
+                <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" >
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">DATE</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TEMP</li>
+                <li class="list-group-item">HUMUDITY</li>
+                <li class="list-group-item">WINDSPEED</li>
+              </ul>
+            </div>
+            <div class="card col-lg-2 col-md-2 col-sm-12 col-12" >
+              <div class="card-body">
+                <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" >
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">DATE</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TEMP</li>
+                <li class="list-group-item">HUMUDITY</li>
+                <li class="list-group-item">WINDSPEED</li>
+              </ul>
+            </div>
+            <div class="card col-lg-2 col-md-2 col-sm-12 col-12" >
+              <div class="card-body">
+                <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" >
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">DATE</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TEMP</li>
+                <li class="list-group-item">HUMUDITY</li>
+                <li class="list-group-item">WINDSPEED</li>
+              </ul>
+            </div>
+            <div class="card col-lg-2 col-md-2 col-sm-12 col-12" >
+              <div class="card-body">
+                <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" >
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">DATE</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TEMP</li>
+                <li class="list-group-item">HUMUDITY</li>
+                <li class="list-group-item">WINDSPEED</li>
+              </ul>
+            </div>
+            <div class="card col-lg-2 col-md-2 col-sm-12 col-12" >
+              <div class="card-body">
+                <img src="./assets/images/sun-regular.svg" class="card-img-top text-center" alt="weather icon" >
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">DATE</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">TEMP</li>
+                <li class="list-group-item">HUMUDITY</li>
+                <li class="list-group-item">WINDSPEED</li>
+              </ul>
+            </div>
+            </div>
+            <!--END Forecast-->
+
+          </div>
+          </div>
+          
+          
+
+     
+          
+        
         </main>
       
         <footer class="footer">
