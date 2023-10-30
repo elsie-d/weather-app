@@ -20,7 +20,7 @@
         <header>
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                  <span class="navbar-brand mb-0 h1">Navbar</span>
+                  <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
                 </div>
               </nav>
 
@@ -29,21 +29,41 @@
 
            <!--START Search Bar-->
            <form class="search-form">
-            <div class="mb-3">
+            <div class="mb-3 search-container">
               <h3>Search by City Name</h3>
               <input class="form-control" id="city-search" placeholder="E.g., San Farncisco, Los Angeles, New York" >
-            
+              
+
+            <div class="search-history">
+            <p>Recent Search</p>
+            <div class="history-list">
+                 <div class="history-items">
+                  <p></p>
+                 </div>
             </div>
+            </div>
+
+            </div>
+           
             
-            <button class="btn btn-primary" id="search-btn">Search</button>
+           
+          
+           <button class="btn btn-primary" id="search-btn">Search</button>
+            
+          
           </form>
+          
+
+
+
+
           <!--END Search Bar-->
          
           
-          <div class="containerAll">
+          <div class="container-main">
           <div class="weather-data">
              <!--START Current Weather-->
-             <h2>Current</h2>
+             <h2>Current Weather:</h2>
             <div class="current-weather">
               <div class="details  ">
                 <h2>CITY NAME -- DATE</h2>
@@ -58,7 +78,7 @@
             </div>
             <!--END Current Weather-->
              <!--START Forecast-->
-             <h2>5 day Forecast</h2>
+             <h2>5 Day Forecast:</h2>
             <div class="forecast-cards">
             <div class="card col-lg-2 col-md-2 col-sm-12 col-12 " >
               <div class="card-body ">
@@ -121,11 +141,7 @@
           </div>
           </div>
           
-          
-
-     
-          
-        
+      
         </main>
       
         <footer class="footer">

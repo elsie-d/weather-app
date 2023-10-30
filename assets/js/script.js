@@ -1,5 +1,8 @@
+var form = document.querySelector(".search-form")
+var historyList = document.querySelector(".history-list")
 var citySearch = document.querySelector("#city-search");
 var searchBtn = document.querySelector("#search-btn");
+var mainConatiner = document.querySelector(".container-main")
 var currentWeatherDiv = document.querySelector(".current-weather")
 var forecastCardsDiv = document.querySelector(".forecast-cards")
 var apiKEY = 'd2049667069ea0037ba25d8371e6e8cc'
@@ -40,7 +43,10 @@ var createForecastCard = (cityValue, weatherBlock, index) => {
 
 
 
-
+//Display main container
+function displayWeather(){
+    mainConatiner.style.display = "block";
+}
 
 
 
@@ -105,7 +111,25 @@ var getCoordinates = () => {
 
 
 
-searchBtn.addEventListener("click", function(e){
-    e.preventDefault()
-    getCoordinates()
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    getCoordinates();
+    displayWeather();
+
+var history = []   
+
+history.push(citySearch.value);
+localStorage.setItem('City Search', history)
+  console.log(history) ;
+   
+var historyHtmlList = ""
+for(let i = 0; i < history.length ; i++){
+    historyHtmlList +=
+    ` <div class="history-items">
+    <p>${history[i]}</p>
+   </div>
+    `
+}
+historyList.innerHTML = historyHtmlList
+
 });

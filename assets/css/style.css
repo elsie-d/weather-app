@@ -33,7 +33,17 @@ form {
     text-align: center;
     padding-bottom: 30px;
 }
-
+.search-history {
+    text-align: left;
+    background-color: var(--secondary);
+    height: 200px;
+    margin-top: 0px;
+    position: relative;
+    display: none ;
+}
+.search-container:focus-within .search-history{
+    display: block;
+}
 .btn-primary {
 --bs-btn-color: #EEEEEE;
 --bs-btn-bg: #476072;
@@ -55,12 +65,13 @@ form {
 }
 
 
-.containerAll{
+.container-main{
 
     display: flex;
     gap: 35px;
     padding: 30px;
     justify-content: center;
+    display: none;
 
 }
 .weather-data {
